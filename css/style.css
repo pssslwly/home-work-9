@@ -163,9 +163,9 @@ height: 50px;
     padding-left: calc(50vw - 360px);
     padding-right: calc(50vw - 360px);
 }
-.projects{
+.project-icons{
     flex-wrap: wrap;
-    width: 500px;
+    width: 50%;
 }
 }
     
