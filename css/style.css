@@ -113,7 +113,7 @@ background: var(--bg-accent);
 }
 .projects{
     background: var(--color-accent);
-    padding: 100px 300px;
+    padding: 100px 270px;
 }
 .project-icons{
     display: flex;
