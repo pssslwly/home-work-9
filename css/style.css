@@ -169,7 +169,7 @@ height: 50px;
 }
 .project-icons{
     flex-wrap: wrap;
-    width: 50%;
+    /* width: 50%; */
 }
 }
      @media screen and (max-width: 768px) {
@@ -258,6 +258,13 @@ input:checked + .header__nav-toggler span{
         .text-section__desc:not(:last-child){
             margin-bottom: 20px;
         }
+                .projects{
+                    flex-wrap: wrap;
+                }
+                .icon-block{
+                    flex-wrap: wrap;
+                    width: 45%;
+                }
      }
     @media screen and (max-width: 500px) {
         .container {
@@ -346,4 +353,12 @@ input:checked + .header__nav-toggler span{
                  input:checked ~ .header__list {
                      translate: 0;
                  }
+                .projects {
+                flex-wrap: wrap;
+                }
+                                
+                .icon-block {
+                flex-wrap: wrap;
+                width: 30%;
+                }
                 }
