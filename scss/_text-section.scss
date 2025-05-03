@@ -1,0 +1,30 @@
+@import "variables";
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    &--accent {
+            background: $bg-accent;
+        }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 500;
+        margin: 0 0 50px;
+    }
+    &__desc {
+            color: $text-secondary;
+            max-width: 540px;
+            text-align: center;
+            &:not(:last-child) {
+                    margin-bottom: 50px;
+                }
+        }
+    &__video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+}

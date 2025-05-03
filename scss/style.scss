@@ -1,4 +1,8 @@
-@import "normilize"
-body{
-    background: #000;
-}
+@import "_normilize";
+@import "variables";
+@import "header";
+@import "offer";
+@import "button";
+@import "text-section";
+@import "footer";
+@import "projects";

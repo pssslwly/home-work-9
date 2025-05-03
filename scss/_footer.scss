@@ -1,0 +1,14 @@
+.footer {
+    background: var(--color-accent);
+    &-title {
+            color: $text-accent;
+            font-size: 21px;
+            font-weight: 500;
+        }
+                &-rights {
+                    color: $text-accent;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+}
+

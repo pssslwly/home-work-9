@@ -1,0 +1,50 @@
+@import "variables";
+.body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.64;
+}
+.container {
+    padding: 0 calc(50vw - 555px);
+}
+.header {
+    padding-top: 79px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: $bg-accent;
+   
+    &__nav-toggler,
+        #nav-toggler {
+            display: none;
+        }
+
+&__list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+&__link {
+    text-decoration: none;
+    color: $color-black;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    &--active {
+            color: $color-accent;
+            font-weight: 500;
+        }
+    
+        &:hover,
+        &:focus {
+            opacity: .5;
+        }
+    
+        &:active {
+            opacity: .3;
+        }
+}
+
+}
