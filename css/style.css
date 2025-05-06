@@ -611,7 +611,7 @@ th {
     padding: 20px;
     box-sizing: border-box;
   }
-  input:checked ~ .header__list__list {
+  input:checked ~ .header__list {
     translate: 0;
   }
   input:checked + .header__nav-toggler:before, input:checked + .header__nav-toggler:after {
@@ -623,5 +623,131 @@ th {
   }
   input:checked + .header__nav-toggler span {
     opacity: 0;
+  }
+  .offer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .offer__title {
+    margin-bottom: 20px;
+  }
+  .offer__desc {
+    margin-bottom: 20px;
+  }
+  .offer__desc:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .text-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .text-section__title, .text-section__desc:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .projects {
+    flex-wrap: wrap;
+  }
+  .icon-block {
+    flex-wrap: wrap;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header {
+    padding-top: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .header__nav-toggler,
+  .header #nav-toggler {
+    display: none;
+  }
+  .header__nav-toggler {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    width: 45px;
+    height: 45px;
+  }
+  .header__nav-toggler span, .header__nav-toggler:before, .header__nav-toggler:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background: black;
+    transition: 0.5s;
+  }
+  .header__nav-toggler:before {
+    margin-top: -10px;
+  }
+  .header__nav-toggler:after {
+    margin-top: 10px;
+  }
+  input:checked + .header__nav-toggler__nav-toggler:before, input:checked + .header__nav-toggler__nav-toggler:after {
+    margin-top: 0;
+    rotate: 225deg;
+  }
+  input:checked + .header__nav-toggler__nav-toggler:after {
+    rotate: -225deg;
+  }
+  input:checked + .header__nav-toggler__nav-toggler span {
+    opacity: 0;
+  }
+  .header__list {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: calc(100dvh - 65px);
+    background: var(--bg-accent);
+    translate: -200vw 0;
+    transition: translate 0.5s;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  input:checked ~ .header__list {
+    translate: 0;
+  }
+  .header__list {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: calc(100dvh - 65px);
+    background: var(--bg-accent);
+    translate: -200vw 0;
+    transition: translate 0.5s;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  input:checked ~ .header__list {
+    translate: 0;
+  }
+  .projects {
+    flex-wrap: wrap;
+  }
+  .icon-block {
+    flex-wrap: wrap;
+    width: 30%;
   }
 }/*# sourceMappingURL=style.css.map */
