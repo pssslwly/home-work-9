@@ -1,5 +1,6 @@
+@import "_variables";
 .footer {
-    background: var(--color-accent);
+    background: $color-accent;
     &-title {
             color: $text-accent;
             font-size: 21px;

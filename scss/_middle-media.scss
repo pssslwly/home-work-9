@@ -1,0 +1,106 @@
+     @media screen and (max-width: 768px) {
+         .container {
+             padding-left: calc(50vw - 260px);
+             padding-right: calc(50vw - 260px);
+         }
+
+         .header {
+             padding-top: 20px;
+         
+
+         &__nav-toggler {
+             display: block;
+             background: none;
+             border: none;
+             padding: 0;
+             position: relative;
+             width: 45px;
+             height: 45px;
+             span, &:before, &:after{
+                position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    top: 50%;
+                    left: 50%;
+                    translate: -50% -50%;
+                    background: black;
+                    transition: .5s;
+             }
+             &:before{
+                margin-top: -10px;
+             }
+             &:after{
+                margin-top: 10px;
+             }
+         }
+
+        &__list {
+            position: absolute;
+            top: 65px;
+            left: 0;
+            height: calc(100dvh - 65px);
+            background: var(--bg-accent);
+            translate: -200vw 0;
+            transition: translate 0.5s;
+            flex-direction: column;
+            overflow: auto;
+            width: 100%;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+                
+            input:checked~&__list {
+                translate: 0;
+            }
+                                 }
+        
+
+         input:checked+&__nav-toggler:before,
+         input:checked+&__nav-toggler:after {
+             margin-top: 0;
+             rotate: 225deg;
+         }
+
+         input:checked+&__nav-toggler:after {
+             rotate: -225deg;
+         }
+
+         input:checked+&__nav-toggler span {
+             opacity: 0;
+         }
+ }
+}
+// .offer {
+//     padding-top: 100px;
+//     padding-bottom: 50px;
+//     &__title {
+//             margin-bottom: 20px;
+//         }
+//                 &__desc {
+//                     margin-bottom: 20px;
+//                     &:not(:last-child) {
+//                        margin-bottom: 20px; }
+//                 }
+// }
+
+
+
+// .text-section {
+//     padding-top: 50px;
+//     padding-bottom: 50px;
+//     &__title,
+//         &__desc:not(:last-child) {
+//             margin-bottom: 20px;
+//         }
+// }
+
+// .projects {
+//     flex-wrap: wrap;
+// }
+
+// .icon-block {
+//     flex-wrap: wrap;
+//     width: 45%;
+// }

@@ -1,0 +1,10 @@
+@media screen and (max-width: 1170px) {
+    .container {
+        padding-left: calc(50vw - 360px);
+        padding-right: calc(50vw - 360px);
+    }
+
+    .project-icons {
+        flex-wrap: wrap;
+    }
+}
